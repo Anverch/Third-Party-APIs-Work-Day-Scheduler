@@ -7,9 +7,9 @@ $(".container").append(table);
 table.addClass("time-block");
 
 // for loop for the 8 rows for 8 hours of work day 
-for (var i=0; i < 8; i++) {
+for (var i=0; i < 9; i++) {
     var tableRow = $("<tr>");
-    tableRow.text("Tr" + i);
+    tableRow.text(moment().hours(i+9).format('h A'));
     table.append(tableRow);
     tableRow.addClass("row");  
 }
