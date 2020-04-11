@@ -13,19 +13,14 @@ for (var i=0; i < 9; i++) {
     table.append(tableRow);
     tableRow.addClass("row time-block");
 
-    var column1 = $("<div>");
-    column1.addClass("col-md-1");
-
-    var column2 = $("<textarea>"); 
-    column2.addClass("col-md-10");
-
-    var column3 = $("<div>"); 
-    column3.addClass("col-md-1");
+    var workHour = $("<div>").addClass("col-md-1");
+    var workEvent = $("<textarea>").addClass("col-md-10"); 
+    var saveBtn = $("<button>").addClass("col-md-1"); 
     
-    tableRow.append(column1, column2, column3);
-    column1.addClass("hour").text(rowTime.format('h A'));
-    column2.addClass("description " + getRowClass(rowTime.hour()));
-    column3.addClass(" saveBtn");
+    tableRow.append(workHour, workEvent, saveBtn);
+    workHour.addClass("hour").text(rowTime.format('h A'));
+    workEvent.addClass("description " + getRowClass(rowTime.hour()));
+    saveBtn.addClass("saveBtn");
 
 }
 
