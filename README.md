@@ -44,3 +44,5 @@ You are required to submit the following for review:
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+a README.md will typically include a description of the application. Additionally, a screenshot and/or link to a live demo will also be included.
